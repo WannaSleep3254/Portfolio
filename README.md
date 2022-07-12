@@ -6,7 +6,14 @@
 ### JetsonNano
 ### XavierNx
 ### TouchPannel
-
+## Comunication
+### Serial
+### TCP
+### UDP
+### CAN
+### EatherCAt
+### ModbusRTU
+### ModbusTCP
 ## Code
 ### Library
 * [ForkedRepository](https://github.com/WannaSleep3254/ForkedRepository)
