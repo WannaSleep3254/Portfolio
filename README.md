@@ -1,7 +1,5 @@
 ## Settings
 
-## Project
-
 ## Code
 ### Library
 * [ForkedRepository](https://github.com/WannaSleep3254/ForkedRepository)
@@ -14,3 +12,8 @@
 
 ### Release
 *
+
+## Manual
+
+
+## Project
