@@ -1,4 +1,11 @@
 ## Settings
+### SHELL
+### ROS1
+### ROS2
+### Qt5
+### JetsonNano
+### XavierNx
+### TouchPannel
 
 ## Code
 ### Library
