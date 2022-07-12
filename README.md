@@ -22,7 +22,8 @@
   * PepperlFutchs
 * ROBOR|iHARS: [iahrs_linux](https://github.com/page365/iahrs_linux), [iahrs_win32](https://github.com/page365/iahrs_win32)
 ### Customize
-* ROBOR | iHARS: [ROS2_Wrapper](https://github.com/WannaSleep3254/iAHRS_ros2)
+* [NTRexLAB] iHARS: [ROS1_Wrapper]MW-AHRSv1
+* [ROBOR] iHARS: [ROS2_Wrapper](https://github.com/WannaSleep3254/iAHRS_ros2)
 
 ### Develop
 * SICK | safteyscanner : [ROS2_Wrapper] for ROS2 Dashing
