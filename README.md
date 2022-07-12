@@ -11,7 +11,7 @@
 ### TCP
 ### UDP
 ### CAN
-### EatherCAt
+### EatherCat
 ### ModbusRTU
 ### ModbusTCP
 ## Code
