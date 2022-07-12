@@ -22,7 +22,7 @@
   * PepperlFutchs
 * ROBOR|iHARS: [iahrs_linux](https://github.com/page365/iahrs_linux), [iahrs_win32](https://github.com/page365/iahrs_win32)
 ### Customize
-* [NTRexLAB] iHARS: [ROS1_Wrapper]MW-AHRSv1
+* [NTRexLAB] MW-AHRSv1: [ROS1_Wrapper]
 * [ROBOR] iHARS: [ROS2_Wrapper](https://github.com/WannaSleep3254/iAHRS_ros2)
 
 ### Develop
