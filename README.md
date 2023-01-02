@@ -1,9 +1,9 @@
 ## Coding Languages
 ### C / C++
 * [::](https://kldp.org/node/123348)
-* # 연산자
+* #연산자
 * #if
-* ## 연산자
+* ##연산자
 * [explicit](https://dydtjr1128.github.io/cpp/2019/07/13/Cpp-explicit-keyowrd.html)
 ### Python
 * Byte
