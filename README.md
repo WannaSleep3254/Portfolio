@@ -1,10 +1,21 @@
 ## Coding Languages
 ### C / C++
+* # 연산자
+* #if
+* ## 연산자
+* [explicit](https://dydtjr1128.github.io/cpp/2019/07/13/Cpp-explicit-keyowrd.html)
 ### Python
+* Byte
 ### Shell Script
+* 
+* if / for
+* export
+* Display
+* 
 ### Java
 ### Android
 ### REST
+* [REST API](https://meetup.nhncloud.com/posts/92)
 ## Default Settings (Doc)
 ### SHELL
 ### ROS1
