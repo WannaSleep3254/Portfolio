@@ -1,6 +1,6 @@
 ## Coding Languages
 ### C / C++
-* (::)[https://kldp.org/node/123348]
+* [::](https://kldp.org/node/123348)
 * # 연산자
 * #if
 * ## 연산자
