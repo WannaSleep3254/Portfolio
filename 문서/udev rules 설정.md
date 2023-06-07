@@ -1,5 +1,5 @@
 
-## 라이브러리 설치
+## 시리얼 라이브러리
 [https://github.com/wjwwood/serial.git](https://github.com/wjwwood/serial.git)
 
 ## 포트 권한
