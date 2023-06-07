@@ -4,11 +4,11 @@
 
 ## 포트 권한
  * sol-1) su 권한으로 실행
-        - ex) $ sudo
+    ``` $ sudo ```
  * sol-2) 포트 사용권한 허용
-        - ex) $ sudo chmod 666 /dev/ttyACM0
+    ex) $ sudo chmod 666 /dev/ttyACM0
  * sol-3) 유저그룹 추가 [RECOMMAND]
-        - ex) $ sudo usermod -a -G dialout $USER
+    ex) $ sudo usermod -a -G dialout $USER
 
 
 
