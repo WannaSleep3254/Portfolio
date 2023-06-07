@@ -21,8 +21,8 @@
     $ cd /etc/udev/rules.d
     $ nano 99-usb-serial.rules
     
-    ```
+    
     SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", ATTRS{serial}=="8573531333335161B142", SYMLINK+="arduino"
-    ```
+    
  ### step-4) replug USB PORT & check result
          - ex) ls -l /dev/arduino
