@@ -35,7 +35,7 @@ cd /etc/udev/rules.d
 sudo nano 99-usb-serial.rules
 ```
 </br>
-2. 포트입력
+2. 포트입력  
 ``` Bash
 SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", ATTRS{serial}=="8573531333335161B142", SYMLINK+="arduino"
 ```
