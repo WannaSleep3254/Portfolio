@@ -2,7 +2,14 @@
 ## 시리얼 라이브러리
 [https://github.com/wjwwood/serial.git](https://github.com/wjwwood/serial.git)
 
-## 포트 권한
+## 파일경로
+### Default rules
+Path: ``` /lib/udev/rules.d ```
+### Temporary rules
+Path: ``` /dev/.udev/rules.d ```
+### user-cumstom ruels (*)
+Path: ``` /etc/udev/rules.d ```
+## 포트 권한설정
 ### sol-1) su 권한으로 실행
 ```Bash
 sudo 
