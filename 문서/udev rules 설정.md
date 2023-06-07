@@ -3,13 +3,15 @@
 [https://github.com/wjwwood/serial.git](https://github.com/wjwwood/serial.git)
 
 ## 포트 권한
-    sudo
 ### sol-1) su 권한으로 실행
-    $ sudo
+$ ``` sudo ```
+
 ### sol-2) 포트 사용권한 허용
-    $ sudo chmod 666 /dev/ttyACM0
+``` sudo chmod 666 /dev/ttyACM0 ```
 ### sol-3) 유저그룹 추가 [RECOMMAND]
-    $ sudo usermod -a -G dialout $USER
+```bash
+    sudo usermod -a -G dialout $USER
+```
 
 
 
