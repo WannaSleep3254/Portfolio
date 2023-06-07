@@ -38,13 +38,14 @@ sudo nano 99-usb-serial.rules
 </br>
 2. 포트입력
 
-``` Bash
+```Bash
 SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", ATTRS{serial}=="8573531333335161B142", SYMLINK+="arduino"
 ```
 ### step-4) rload rules
-``Bash
+```Bash
 udevadm control --reload-rules && udevadm trigger
 ```
+
 ### step-5) replug USB PORT & check result
  ```Bash
  ls -l /dev/arduino
