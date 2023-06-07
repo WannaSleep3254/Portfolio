@@ -9,13 +9,17 @@ cd /lib/udev/rules.d
 ```
 ### Temporary rules
 ``` Bash
-/dev/.udev/rules.d
+cd /dev/.udev/rules.d
 ```
 ### user-cumstom ruels (*)
 ```Bash
-/etc/udev/rules.d
+cd /etc/udev/rules.d
 ```
-
+## 작성 규칙
+### 확장자
+```Bash
+*.rules
+```
 ## 포트 권한설정
 ### sol-1) su 권한으로 실행
 ```Bash
