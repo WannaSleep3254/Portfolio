@@ -3,7 +3,7 @@
 [https://github.com/wjwwood/serial.git](https://github.com/wjwwood/serial.git)
 
 ## 포트 권한
-sudo
+    sudo
 ### sol-1) su 권한으로 실행
     $ sudo
 ### sol-2) 포트 사용권한 허용
