@@ -1,0 +1,9 @@
+시스템 shutdown
+
+int (main) {
+    system("/bin/sh -c shutdown -P now");
+}
+
+int (main) {
+    reboot(LINUX_REBOOT_CMD_POWER_OFF);
+}
