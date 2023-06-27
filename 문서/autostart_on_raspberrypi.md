@@ -25,7 +25,7 @@ The System autostart file is located here: /etc/xdg/lxsession/LXDE-pi/
 
 To open System autostart using the nano editor:
 
-```bash
+```shell
 sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 ```
 See Using the Autostart File & Sample Autostart Files below.
@@ -39,7 +39,7 @@ The user autostart file and associated path does not exist by default.
 The pi user autostart needs to be located here: /home/pi/.config/lxsession/LXDE-pi/ (If not user pi then substitute your username for pi /home/{user}/.config/lxsession/LXDE-pi/).
 
 You will first need to create the lxsession and LXDE-pi sub directories then copy the System autostart to the user(s) location(s).
-```bash 
+```shell
 mkdir /home/pi/.config/lxsession
 mkdir /home/pi/.config/lxsession/LXDE-pi
 cp /etc/xdg/lxsession/LXDE-pi/autostart /home/pi/.config/lxsession/LXDE-pi/
