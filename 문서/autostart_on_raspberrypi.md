@@ -82,54 +82,54 @@ Using the Autostart File (System or User):
 
 ### Sample Autostart Files:
 1. Example to start Calculator:
-```bash
-@lxpanel --profile LXDE-pi
-@pcmanfm --desktop --profile LXDE-pi
-@xscreensaver -no-splash
-@galculator
-```
+	```bash
+	@lxpanel --profile LXDE-pi
+	@pcmanfm --desktop --profile LXDE-pi
+	@xscreensaver -no-splash
+	@galculator
+	```
 2. Example to start browser:
-```bash
-@lxpanel --profile LXDE-pi
-@pcmanfm --desktop --profile LXDE-pi
-@xscreensaver -no-splash
-@chromium-browser www.raspberrypi.org
-```
+	```bash
+	@lxpanel --profile LXDE-pi
+	@pcmanfm --desktop --profile LXDE-pi
+	@xscreensaver -no-splash
+	@chromium-browser www.raspberrypi.org
+	```
 3. Example to start a Python 3 script:
-```bash
-@lxpanel --profile LXDE-pi
-@pcmanfm --desktop --profile LXDE-pi
-@xscreensaver -no-splash
-@python3 /path/my_script.py
-```
+	```bash
+	@lxpanel --profile LXDE-pi
+	@pcmanfm --desktop --profile LXDE-pi
+	@xscreensaver -no-splash
+	@python3 /path/my_script.py
+	```
 4. Example to start a Python 3 script with terminal:
-```bash
-@lxpanel --profile LXDE-pi
-@pcmanfm --desktop --profile LXDE-pi
-@xscreensaver -no-splash
-@lxterminal -e python3 /path/my_script.py
-```
+	```bash
+	@lxpanel --profile LXDE-pi
+	@pcmanfm --desktop --profile LXDE-pi
+	@xscreensaver -no-splash
+	@lxterminal -e python3 /path/my_script.py
+	```
 5. Example to start a Bash script:
-```bash
-@lxpanel --profile LXDE-pi
-@pcmanfm --desktop --profile LXDE-pi
-@xscreensaver -no-splash
-@bash /path/my_script
-```
+	```bash
+	@lxpanel --profile LXDE-pi
+	@pcmanfm --desktop --profile LXDE-pi
+	@xscreensaver -no-splash
+	@bash /path/my_script
+	```
 6. Example to start a Bash script with terminal:
-```bash
-@lxpanel --profile LXDE-pi
-@pcmanfm --desktop --profile LXDE-pi
-@xscreensaver -no-splash
-@lxterminal -e bash /path/my_script
-```
+	```bash
+	@lxpanel --profile LXDE-pi
+	@pcmanfm --desktop --profile LXDE-pi
+	@xscreensaver -no-splash
+	@lxterminal -e bash /path/my_script
+	```
 7. Example to open Lxterminal without running a command:
-```bash
-@lxpanel --profile LXDE-pi
-@pcmanfm --desktop --profile LXDE-pi
-@xscreensaver -no-splash
-@lxterminal
-```
+	```bash
+	@lxpanel --profile LXDE-pi
+	@pcmanfm --desktop --profile LXDE-pi
+	@xscreensaver -no-splash
+	@lxterminal
+	```
 Notes on using lxterminal -e:
 (Notes below apply when lxterminal -e is used directly in autostart file. The noted behavior may different than what happens when run from the terminal command line).
 
