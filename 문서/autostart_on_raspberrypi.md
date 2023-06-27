@@ -163,4 +163,4 @@ Exec=pcmanfm
 Type=Application
 ```
 Give the file a unique name such as pcm.desktop and place it in /etc/xdg/autostart for system wide all users or **/home/pi/.config/autostart** for specific user.
-You can have multiple `.desktop files`.
+<span style="color:red">You can have multiple `.desktop` files.</span>
