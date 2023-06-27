@@ -25,7 +25,7 @@ The System autostart file is located here: /etc/xdg/lxsession/LXDE-pi/
 
 To open System autostart using the nano editor:
 
-```Bash
+```bash
 sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 ```
 See Using the Autostart File & Sample Autostart Files below.
@@ -39,7 +39,7 @@ The user autostart file and associated path does not exist by default.
 The pi user autostart needs to be located here: /home/pi/.config/lxsession/LXDE-pi/ (If not user pi then substitute your username for pi /home/{user}/.config/lxsession/LXDE-pi/).
 
 You will first need to create the lxsession and LXDE-pi sub directories then copy the System autostart to the user(s) location(s).
-```Bash
+```bash 
 mkdir /home/pi/.config/lxsession
 mkdir /home/pi/.config/lxsession/LXDE-pi
 cp /etc/xdg/lxsession/LXDE-pi/autostart /home/pi/.config/lxsession/LXDE-pi/
@@ -47,7 +47,7 @@ cp /etc/xdg/lxsession/LXDE-pi/autostart /home/pi/.config/lxsession/LXDE-pi/
 Note: If a user autostart file exists at /home/pi/.config/lxsession/LXDE-pi, then the System autostart file is totally ignored (for that user).
 
 To open the User autostart using the nano editor:
-```Bash
+```bash
 nano /home/pi/.config/lxsession/LXDE-pi/autostart
 ```
 See Using the Autostart File & Sample Autostart Files below.
@@ -55,7 +55,7 @@ See Using the Autostart File & Sample Autostart Files below.
 Using the Autostart File (System or User):
 
 The default System autostart file:
-```Bash
+```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
@@ -83,49 +83,49 @@ The default System autostart file:
 Sample Autostart Files:
 
 Example to start Calculator:
-```Bash
+```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @galculator
 ```
 Example to start browser:
-```Bash
+```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @chromium-browser www.raspberrypi.org
 ```
 Example to start a Python 3 script:
-```Bash
+```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @python3 /path/my_script.py
 ```
 Example to start a Python 3 script with terminal:
-```Bash
+```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @lxterminal -e python3 /path/my_script.py
 ```
 Example to start a Bash script:
-```Bash
+```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @bash /path/my_script
 ```
 Example to start a Bash script with terminal:
-```Bash
+```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @lxterminal -e bash /path/my_script
 ```
 Example to open Lxterminal without running a command:
-```Bash
+```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
@@ -155,7 +155,7 @@ Note that the System autostart file OR User autostart file if present, is run an
 In addition the .desktop files for system /etc/xdg/autostart and the .desktop files in the users home directory /home/pi/.config/autostart/ will all be processed.
 
 Example .desktop file to start File Manager:
-```Bash
+```desktop
 [Desktop Entry]
 Name=File Manager
 Exec=pcmanfm
