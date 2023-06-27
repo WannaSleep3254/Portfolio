@@ -54,7 +54,7 @@ See Using the Autostart File & Sample Autostart Files below.
 
 Using the Autostart File (System or User):
 
-The default System autostart file:
+### The default System autostart file:
 ```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
@@ -80,51 +80,50 @@ The default System autostart file:
 
 • In some rare cases you may need to add a delay before starting your script to give the Desktop more time to complete the booting process before your app starts. This can be done with a bash sleep command. Do not attempt to add the sleep command directly in autostart, it won’t work. Use the sleep command in a bash script instead.
 
-Sample Autostart Files:
-
-Example to start Calculator:
+### Sample Autostart Files:
+1. Example to start Calculator:
 ```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @galculator
 ```
-Example to start browser:
+2. Example to start browser:
 ```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @chromium-browser www.raspberrypi.org
 ```
-Example to start a Python 3 script:
+3. Example to start a Python 3 script:
 ```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @python3 /path/my_script.py
 ```
-Example to start a Python 3 script with terminal:
+4. Example to start a Python 3 script with terminal:
 ```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @lxterminal -e python3 /path/my_script.py
 ```
-Example to start a Bash script:
+5. Example to start a Bash script:
 ```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @bash /path/my_script
 ```
-Example to start a Bash script with terminal:
+6. Example to start a Bash script with terminal:
 ```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @lxterminal -e bash /path/my_script
 ```
-Example to open Lxterminal without running a command:
+7. Example to open Lxterminal without running a command:
 ```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
