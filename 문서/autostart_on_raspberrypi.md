@@ -2,8 +2,8 @@
 
 https://forums.raspberrypi.com/viewtopic.php?t=294014
 
-* Note the settings and defaults described below are found in the Raspbian 'Buster' and later RPi OS releases.  
-* Raspbian 'Stretch' and before releases used different defaults as noted below.
++ Note the settings and defaults described below are found in the Raspbian 'Buster' and later RPi OS releases.  
++ Raspbian 'Stretch' and before releases used different defaults as noted below.
 ## Autostart
 The autostart feature can be used to automatically start just about any app, script or command at boot (User login). Requires boot to Desktop (GUI) enabled.  
 Autostart(자동시작)기능은 부팅 후, 사용자 로그인 단계에서 거의 모든 앱, 스크립트 또는 명령을 자동으로 시작하는 데 사용할 수 있습니다.
