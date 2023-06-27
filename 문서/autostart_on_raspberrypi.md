@@ -153,7 +153,7 @@ You may need to create the auotstart directory if not present
 
 Note that the System autostart file OR User autostart file if present, is run and processed along with the .desktop file(s).
 
-In addition the .desktop files for system **/etc/xdg/autostart** and the .desktop files in the users home directory **/home/pi/.config/autostart/** will all be processed.
+In addition the `.desktop` files for system **/etc/xdg/autostart** and the .desktop files in the users home directory **/home/pi/.config/autostart/** will all be processed.
 
 Example .desktop file to start File Manager:
 ```desktop
@@ -162,5 +162,5 @@ Name=File Manager
 Exec=pcmanfm
 Type=Application
 ```
-Give the file a unique name such as pcm.desktop and place it in /etc/xdg/autostart for system wide all users or **`/home/pi/.config/autostart`** for specific user.
+Give the file a unique name such as pcm.desktop and place it in /etc/xdg/autostart for system wide all users or **/home/pi/.config/autostart** for specific user.
 You can have multiple `.desktop files`.
