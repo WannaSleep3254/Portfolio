@@ -16,14 +16,14 @@ Other methods such as rc.local or cron @reboot do not easily handle GUI programs
 There are 4 autostart methods or options:
 분류|설명
 ------|-------
-• System (All Users) |*** Default in 'Buster' and later OS releases ***
-• User (Specific Users) |*** Default in 'Stretch' and earlier OS releases ***
+• System (All Users) |**Default in 'Buster' and later OS releases**
+• User (Specific Users) |**Default in 'Stretch' and earlier OS releases**
 • Traditional (All Users) |with .desktop files
 • Traditional (Specific User)| with .desktop files
 
 ## System Method:
 The System method is easiest as the required autostart file is already present and commands can easily be added with a simple edit. By default, the System autostart is applied to all users and executes each time a user logs in.
-The System autostart file is located here: /etc/xdg/lxsession/LXDE-pi/
+The System autostart file is located here:  **/etc/xdg/lxsession/LXDE-pi/**
 
 To open System autostart using the nano editor:
 
@@ -38,7 +38,7 @@ The user method works much the same as the System method but allows for a unique
 
 The user autostart file and associated path does not exist by default.
 
-The pi user autostart needs to be located here: /home/pi/.config/lxsession/LXDE-pi/ (If not user pi then substitute your username for pi /home/{user}/.config/lxsession/LXDE-pi/).
+The pi user autostart needs to be located here: **/home/pi/.config/lxsession/LXDE-pi/** (If not user pi then substitute your username for pi **/home/{user}/.config/lxsession/LXDE-pi/**).
 
 You will first need to create the lxsession and LXDE-pi sub directories then copy the System autostart to the user(s) location(s).
 ```bash
@@ -46,7 +46,7 @@ mkdir /home/pi/.config/lxsession
 mkdir /home/pi/.config/lxsession/LXDE-pi
 cp /etc/xdg/lxsession/LXDE-pi/autostart /home/pi/.config/lxsession/LXDE-pi/
 ```
-Note: If a user autostart file exists at /home/pi/.config/lxsession/LXDE-pi, then the System autostart file is totally ignored (for that user).
+Note: If a user autostart file exists at **/home/pi/.config/lxsession/LXDE-pi**, then the System autostart file is totally ignored (for that user).
 
 To open the User autostart using the nano editor:
 ```bash
@@ -143,17 +143,17 @@ If the script or command exits to the command line for any reason then the termi
 
 
 ## Traditional System Method (All Users):
-Beginning with the Dec 2020 release, Raspberry Pi OS now uses the /etc/xdg/autostart directory to start some background apps for printer etc. You can use this directory to start apps or scripts which will apply to all users.
+Beginning with the Dec 2020 release, Raspberry Pi OS now uses the `/etc/xdg/autostart` directory to start some background apps for printer etc. You can use this directory to start apps or scripts which will apply to all users.
 Note that autostart here is a directory and not a file.
 This method does not use an autostart file. It uses filename.desktop files instead. See example .desktop file below.
 
 ## Traditional User Method (Specific User):
-The traditional method also has a user based option. It requires your filename.desktop file(s) to be located here for pi user /home/pi/.config/autostart/ or for other user /home/{user}/.config/autostart/
+The traditional method also has a user based option. It requires your filename.desktop file(s) to be located here for pi user /home/pi/.config/autostart/ or for other user **/home/{user}/.config/autostart/**
 You may need to create the auotstart directory if not present
 
 Note that the System autostart file OR User autostart file if present, is run and processed along with the .desktop file(s).
 
-In addition the .desktop files for system /etc/xdg/autostart and the .desktop files in the users home directory /home/pi/.config/autostart/ will all be processed.
+In addition the .desktop files for system **/etc/xdg/autostart** and the .desktop files in the users home directory **/home/pi/.config/autostart/** will all be processed.
 
 Example .desktop file to start File Manager:
 ```desktop
@@ -162,5 +162,5 @@ Name=File Manager
 Exec=pcmanfm
 Type=Application
 ```
-Give the file a unique name such as pcm.desktop and place it in /etc/xdg/autostart for system wide all users or /home/pi/.config/autostart for specific user.
-You can have multiple .desktop files.
+Give the file a unique name such as pcm.desktop and place it in /etc/xdg/autostart for system wide all users or **/home/pi/.config/autostart** for specific user.
+You can have multiple `.desktop files`.
