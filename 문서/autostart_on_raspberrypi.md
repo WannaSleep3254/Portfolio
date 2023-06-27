@@ -4,7 +4,7 @@ https://forums.raspberrypi.com/viewtopic.php?t=294014
 
 * Note the settings and defaults described below are found in the Raspbian 'Buster' and later RPi OS releases.
 * Raspbian 'Stretch' and before releases used different defaults as noted below.
-### Autostart
+## Autostart
 The autostart feature can be used to automatically start just about any app, script or command at boot (User login). Requires boot to Desktop (GUI) enabled.
 Autostart(자동시작)기능은 부팅 후, 사용자 로그인 단계에서 거의 모든 앱, 스크립트 또는 명령을 자동으로 시작하는 데 사용할 수 있습니다.
 데스크톱으로 부팅(GUI)이 활성화되어야 합니다.
@@ -19,7 +19,7 @@ There are 4 autostart methods or options:
 • Traditional (All Users) with .desktop files
 • Traditional (Specific User) with .desktop files
 
-### System Method:
+## System Method:
 The System method is easiest as the required autostart file is already present and commands can easily be added with a simple edit. By default, the System autostart is applied to all users and executes each time a user logs in.
 The System autostart file is located here: /etc/xdg/lxsession/LXDE-pi/
 
@@ -31,7 +31,7 @@ sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 See Using the Autostart File & Sample Autostart Files below.
 
 
-### User Method:
+## User Method:
 The user method works much the same as the System method but allows for a unique or custom autostart file for each user. If there is only one user (pi) or your multiple users do not require different apps or scripts started at login / boot, then there is no advantage to doing the user method.
 
 The user autostart file and associated path does not exist by default.
@@ -141,12 +141,12 @@ Only 1 command per line. (Cannot use ; to specify multiple commands). Put multip
 If the script or command exits to the command line for any reason then the terminal is immediately closed. This means if there is an error or the program terminates then you will not be able to see what happened as the terminal window will flash by too quickly.
 
 
-### Traditional System Method (All Users):
+## Traditional System Method (All Users):
 Beginning with the Dec 2020 release, Raspberry Pi OS now uses the /etc/xdg/autostart directory to start some background apps for printer etc. You can use this directory to start apps or scripts which will apply to all users.
 Note that autostart here is a directory and not a file.
 This method does not use an autostart file. It uses filename.desktop files instead. See example .desktop file below.
 
-### Traditional User Method (Specific User):
+## Traditional User Method (Specific User):
 The traditional method also has a user based option. It requires your filename.desktop file(s) to be located here for pi user /home/pi/.config/autostart/ or for other user /home/{user}/.config/autostart/
 You may need to create the auotstart directory if not present
 
