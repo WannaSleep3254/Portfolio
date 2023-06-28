@@ -43,6 +43,7 @@ os.system("shutdown -r -t")
 ```
 ### Qt
 ```cpp
+#include <QProcess>
 QProcess process;
 process.startDetached("shutdown -P now");
 ```
