@@ -40,4 +40,8 @@ import os
 os.system("shutdown -r -t")
 ```
 ### Qt
+```qt
+QProcess process;
+process.startDetached("shutdown -P now");
+```
 
