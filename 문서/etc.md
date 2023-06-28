@@ -1,21 +1,20 @@
 
 # Linux 시스템 종료
 ## Shell Command
-1. 시스템 종료
+### 시스템 종료
     ```bash
     halt
     poweroff
     init 0
     shutdown -h now
     ```
-2. 재부팅
+### 재부팅
     ```bash
     reboot
     init 6
     shutdown -r now
     ```
-3. shutdown 명령어 옵션
-
+### shutdown 명령어 옵션
     옵션|설명
     ------|-------
     -k| 경고메시지 출력
