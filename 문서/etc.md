@@ -15,6 +15,7 @@ init 6
 shutdown -r now
 ```
 3. shutdown 명령어 옵션
+
 옵션|설명
 ------|-------
 -k| 경고메시지 출력
