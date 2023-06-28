@@ -25,11 +25,13 @@
 ## 코드 
 ### C / C++
 ```cpp
+#include <stdlib.h>
 int (main) {
     system("/bin/sh -c shutdown -P now");
 }
 ```
 ```cpp
+#include <stdlib.h>
 int (main) {
     reboot(LINUX_REBOOT_CMD_POWER_OFF);
 }
