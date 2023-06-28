@@ -1,7 +1,7 @@
 
 # Linux 시스템 종료
 ## Shell Command
-``bash
+```bash
 halt
 poweroff
 init 0
