@@ -1,18 +1,18 @@
 # Linux 시스템 종료 - 수정중중
 ## Shell Command
 ### 시스템 종료
-    ```bash
-    halt
-    poweroff
-    init 0
-    shutdown -h now
-    ```
+```bash
+halt
+poweroff
+init 0
+shutdown -h now
+```
 ### 재부팅
-    ```bash
-    reboot
-    init 6
-    shutdown -r now
-    ```
+```bash
+reboot
+init 6
+shutdown -r now
+```
 ### shutdown 명령어 옵션
 
 옵션|설명
