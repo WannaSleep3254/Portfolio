@@ -2,10 +2,10 @@
 # Linux 시스템 종료
 ## Shell Command
 ``bash
-    halt
-    poweroff
-    init 0
-    shutdown -h now
+halt
+poweroff
+init 0
+shutdown -h now
 ```
 ## C / C++
 ```cpp
