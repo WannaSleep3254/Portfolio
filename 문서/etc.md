@@ -1,4 +1,4 @@
-# Linux 시스템 종료
+# Linux 시스템 종료 - 수정중중
 ## Shell Command
 ### 시스템 종료
     ```bash
