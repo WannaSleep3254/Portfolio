@@ -42,7 +42,7 @@ import os
 os.system("shutdown -r -t")
 ```
 ### Qt
-```qt
+```cpp
 QProcess process;
 process.startDetached("shutdown -P now");
 ```
