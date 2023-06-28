@@ -1,9 +1,11 @@
 시스템 shutdown
-
+```cpp
 int (main) {
     system("/bin/sh -c shutdown -P now");
 }
-
+```
+```cpp
 int (main) {
     reboot(LINUX_REBOOT_CMD_POWER_OFF);
 }
+```
