@@ -16,12 +16,12 @@ shutdown -r now
 ```
 3. shutdown 명령어 옵션
 
-옵션|설명
-------|-------
--k| 경고메시지 출력
--h| System shutdown
--r|
--f|
+    옵션|설명
+    ------|-------
+    -k| 경고메시지 출력
+    -h| System shutdown
+    -r|
+    -f|
 
 ## 코드 
 ### C / C++
