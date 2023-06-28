@@ -1,5 +1,5 @@
-# Linux 시스템 종료 - 수정중중
-## Shell Command
+# Linux 시스템 종료 - 수정 중
+## 쉘 스크립트
 ### 시스템 종료
 ```bash
 halt
@@ -22,7 +22,7 @@ shutdown -r now
 -r| 시스템 종료 후 재부팅
 -f| 재부팅할 때 fsck 명령을 건너뛰고 빠르게 진행
 
-## 코드 
+## 코드 내 사용
 ### C / C++
 ```cpp
 #include <stdlib.h>
