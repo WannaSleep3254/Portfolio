@@ -37,7 +37,8 @@ else
           " Try running with sudo?\n", strerror (errno)) ;
 }
 ...
-
+```
+```c
 }
 int physToGpio_5[64] =
 {
