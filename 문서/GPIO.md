@@ -1,11 +1,12 @@
 # GPIO on ROS2
 ## 개발환경
-보드: OrangePI5
-OS: Ubuntu22.04
+Board: OrangePI5  
+OS: Ubuntu22.04  
+Library: wiringOP
 
 ## ISSUE
 ### permission denied
-At use wiringPi, `wiringPiSetup()` required `sudo` permission.  
+At use [https://github.com/orangepi-xunlong/wiringOP](wiringOp) (custom package of `wiringPi` package), `wiringPiSetup()` required `sudo` permission.  
 In the Forum, Several people have the same problem. https://github.com/orangepi-xunlong/wiringOP/issues/28  
 
 ## CODE
