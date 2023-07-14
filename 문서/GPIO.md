@@ -25,17 +25,17 @@ wiringPi.c
 
 extern int  wiringPiSetup       (void){
 ...
-          if ((fd = open ("/dev/mem", O_RDWR | O_SYNC | O_CLOEXEC)) < 0){
-                    if ((fd = open ("/dev/gpiomem", O_RDWR | O_SYNC | O_CLOEXEC) ) >= 0){  // We're using gpiomem
-                              piGpioBase = 0 ;
-                              usingGpioMem = TRUE ;
-          }
-          else
-                    return wiringPiFailure (WPI_ALMOST, "wiringPiSetup: Unable to open /dev/mem or /dev/gpiomem: %s.\n"
-                    " Aborting your program because if it can not access the GPIO\n"
-                    " hardware then it most certianly won't work\n"
-                    " Try running with sudo?\n", strerror (errno)) ;
-          }
+    if ((fd = open ("/dev/mem", O_RDWR | O_SYNC | O_CLOEXEC)) < 0){
+        if ((fd = open ("/dev/gpiomem", O_RDWR | O_SYNC | O_CLOEXEC) ) >= 0){  // We're using gpiomem
+                  piGpioBase = 0 ;
+                  usingGpioMem = TRUE ;
+    }
+    else
+        return wiringPiFailure (WPI_ALMOST, "wiringPiSetup: Unable to open /dev/mem or /dev/gpiomem: %s.\n"
+        " Aborting your program because if it can not access the GPIO\n"
+        " hardware then it most certianly won't work\n"
+        " Try running with sudo?\n", strerror (errno)) ;
+    }
 }
 ...
 ```
