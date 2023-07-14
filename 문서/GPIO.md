@@ -14,6 +14,11 @@ Not Only Ubuntu, also Armbian and other OS.
 ## CODE
 wiringPi.h
 ```c
+extern void wiringPiVersion	(int *major, int *minor) ;
+extern int  wiringPiSetup       (void) ;
+extern int  wiringPiSetupSys    (void) ;
+extern int  wiringPiSetupGpio   (void) ;
+extern int  wiringPiSetupPhys   (void) ;
 ```
 wiringPi.c
 ```c
