@@ -3,6 +3,18 @@
 보드: OrangePI5
 OS: Ubuntu22.04
 
+## ISSUE
+### permission denied
+At use wiringPi, `wiringPiSetup()` required `sudo` permission.  
+In the Forum, Several people have the same problem. https://github.com/orangepi-xunlong/wiringOP/issues/28  
+
+## CODE
+wiringPi.h
+```c
+```
+wiringPi.c
+```c
+```
 
 https://askubuntu.com/questions/1352726/how-do-i-use-pi4s-gpio-pins-with-ubuntu-20-04
 
