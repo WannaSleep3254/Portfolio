@@ -11,7 +11,7 @@ At use [https://github.com/orangepi-xunlong/wiringOP](wiringOp) (custom package 
 In the Forum, Several people have the same problem. https://github.com/orangepi-xunlong/wiringOP/issues/28  
 Not Only Ubuntu, also Armbian and other OS.
 
-## wiringOp CODE Analysis
+## What is the Ploblem ??
 wiringPi.h
 ```c
 extern void wiringPiVersion	(int *major, int *minor) ;
