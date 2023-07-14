@@ -6,8 +6,10 @@ Library: wiringOP
 
 ## ISSUE
 ### permission denied
-At use [https://github.com/orangepi-xunlong/wiringOP](wiringOp) (custom package of `wiringPi` package), `wiringPiSetup()` required `sudo` permission.  
+At use [https://github.com/orangepi-xunlong/wiringOP](wiringOp) (custom package of `wiringPi` package),
+`wiringPiSetup()` required `sudo` permission.  
 In the Forum, Several people have the same problem. https://github.com/orangepi-xunlong/wiringOP/issues/28  
+Not Only Ubuntu, also Armbian and other OS.
 
 ## CODE
 wiringPi.h
@@ -15,6 +17,17 @@ wiringPi.h
 ```
 wiringPi.c
 ```c
+if ((fd = open ("/dev/mem", O_RDWR | O_SYNC | O_CLOEXEC)) < 0){
+          if ((fd = open ("/dev/gpiomem", O_RDWR | O_SYNC | O_CLOEXEC) ) >= 0){  // We're using gpiomem
+                    piGpioBase = 0 ;
+                    usingGpioMem = TRUE ;
+}
+else
+          return wiringPiFailure (WPI_ALMOST, "wiringPiSetup: Unable to open /dev/mem or /dev/gpiomem: %s.\n"
+          " Aborting your program because if it can not access the GPIO\n"
+          " hardware then it most certianly won't work\n"
+          " Try running with sudo?\n", strerror (errno)) ;
+}
 ```
 
 https://askubuntu.com/questions/1352726/how-do-i-use-pi4s-gpio-pins-with-ubuntu-20-04
