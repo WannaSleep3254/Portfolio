@@ -1,3 +1,9 @@
+# GPIO on ROS2
+## 개발환경
+보드: OrangePI5
+OS: Ubuntu22.04
+
+
 https://askubuntu.com/questions/1352726/how-do-i-use-pi4s-gpio-pins-with-ubuntu-20-04
 
 https://waldorf.waveform.org.uk/2021/the-pins-they-are-a-changin.html
