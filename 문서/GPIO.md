@@ -22,6 +22,7 @@ extern int  wiringPiSetupPhys   (void) ;
 ```
 wiringPi.c
 ```c
+...
 if ((fd = open ("/dev/mem", O_RDWR | O_SYNC | O_CLOEXEC)) < 0){
           if ((fd = open ("/dev/gpiomem", O_RDWR | O_SYNC | O_CLOEXEC) ) >= 0){  // We're using gpiomem
                     piGpioBase = 0 ;
@@ -33,6 +34,7 @@ else
           " hardware then it most certianly won't work\n"
           " Try running with sudo?\n", strerror (errno)) ;
 }
+...
 ```
 
 https://askubuntu.com/questions/1352726/how-do-i-use-pi4s-gpio-pins-with-ubuntu-20-04
