@@ -106,17 +106,18 @@ static int ORANGEPI_PIN_MASK_5[5][32] =  //[BANK]	[INDEX]
 
 ```
 
-https://askubuntu.com/questions/1352726/how-do-i-use-pi4s-gpio-pins-with-ubuntu-20-04
-
-https://waldorf.waveform.org.uk/2021/the-pins-they-are-a-changin.html
-
-https://forum.armbian.com/topic/26302-wiringpi-gpio-for-orange-pi-5-armbian/
-
-https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-ports-using-c-cpp/#writing
-
-http://wiringpi.com/reference/serial-library/
-
-
-http://abyz.me.uk/lg/index.html
-http://abyz.me.uk/lg/lgpio.html
-https://github.com/joan2937/lg
+https://askubuntu.com/questions/1352726/how-do-i-use-pi4s-gpio-pins-with-ubuntu-20-04  
+</br>
+https://waldorf.waveform.org.uk/2021/the-pins-they-are-a-changin.html  
+</br>
+https://forum.armbian.com/topic/26302-wiringpi-gpio-for-orange-pi-5-armbian/  
+</br>
+https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-ports-using-c-cpp/#writing  
+</br>
+http://wiringpi.com/reference/serial-library/  
+</br>
+http://abyz.me.uk/lg/index.html  
+http://abyz.me.uk/lg/lgpio.html  
+https://github.com/joan2937/lg  
+</br>
+https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/about/  
