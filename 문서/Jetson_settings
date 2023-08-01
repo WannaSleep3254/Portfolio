@@ -15,8 +15,9 @@ http://wiki.ros.org/melodic/Installation/Ubuntu
 
 #install ROS seriall
 #nano install
+```
 $sudo apt-get install nano
-
+```
 #install QT5
 #not applied & installed
 https://wiki.qt.io/Install_Qt_5_on_Ubuntu
@@ -24,16 +25,18 @@ https://nomad-programmer.tistory.com/65
 
 #install qt 5.9
 https://www.jetsonhacks.com/2017/01/31/install-qt-creator-nvidia-jetson-tx1/
+```
 $sudo apt-get install qt5*
 $sudo apt-get install qtcreator
 $sudo apt-get install libqt5web*
-
+```
 #install libusb
 $sudo apt-get install libusb-1.0-0-dev 
 
 #install ssh
+```
 $sudo apt-get install ssh
-
+```
 #install ros-plugin
 $sudo apt-get install ros-melodic-serial
 $sudo apt-get install ros-melodic-rosserial
