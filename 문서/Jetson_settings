@@ -61,5 +61,7 @@ $ hostnamectl set-chassis vm
 
 #install RealSense
 https://dev.intelrealsense.com/docs/compiling-librealsense-for-linux-ubuntu-guide
-https://forums.developer.nvidia.com/t/intel-realsense-d435i-on-nx-devkit/125511/4
+https://forums.developer.nvidia.com/t/intel-realsense-d435i-on-nx-devkit/125511/4  
 
+# 속도튜닝
+https://developer.ridgerun.com/wiki/index.php/Xavier/JetPack_5.0.2/Performance_Tuning/Maximizing_Performance
