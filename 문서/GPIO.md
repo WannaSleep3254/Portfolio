@@ -2,9 +2,9 @@
 ## 개발환경
 |항목|내용|
 |---|---|
-|Board|OrangePI 5|
+|Host Board|OrangePI 5|
 |OS|Ubuntu22.04|
-|Library|wiringOP|
+|Library|wiringOP, lgGPIO|
 
 ## ISSUE
 ### permission denied
