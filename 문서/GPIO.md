@@ -135,22 +135,22 @@ sudo make install
 ## try using lgGPIO - lgpio library
 ### Obtaining permission for /dev/gpiochip[0~4]
 1. create group `gpio` & add group permission
-``` bash
+```Bash
 sudo groupadd gpio
 sudo usermod -a -G gpio $USER
 ```
 2.  add rule for `/dev/gpiochip[0~4]` of group `gpio`
-``` bash
+```Bash
 cd /etc/udev/rules.d/
 sudo nano 60-gpiod.rules
-```
+```Bash
 * /etc/udev/rules.d/60-gpiod.rules
-```
+```Bash
 # udev rules for gpio port access through libgpiod
 SUBSYSTEM=="gpio", KERNEL=="gpiochip[0-4]", GROUP="gpiod", MODE="0660"
 ```
 3. reload rules & check permission
-```
+```Bash
 udevadm control --reload-rules && udevadm trigger
 sudo udevadm control --reload-rules && udevadm trigger
 reboot 
