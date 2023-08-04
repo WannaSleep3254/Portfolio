@@ -106,7 +106,7 @@ static int ORANGEPI_PIN_MASK_5[5][32] =  //[BANK]	[INDEX]
 
 ```
 ## try using GPIOD
-``` bash
+```Bash
 sudo apt install gpiod 
 python3
 python3 gpioget.py 
@@ -120,7 +120,7 @@ g++ -o blink blink.cpp -lgpiodcxx
 ```
 
 ## try using PIGPIO
-```
+```Bash
 wget https://github.com/joan2937/pigpio/archive/master.zip
 unzip master.zip 
 cp pigpio-master/
