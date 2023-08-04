@@ -1,14 +1,14 @@
 # Linux 시스템 종료 - 수정 중
 ## 쉘 스크립트
 ### 시스템 종료
-```bash
+```Bash
 halt
 poweroff
 init 0
 shutdown -h now
 ```
 ### 재부팅
-```bash
+```Bash
 reboot
 init 6
 shutdown -r now
