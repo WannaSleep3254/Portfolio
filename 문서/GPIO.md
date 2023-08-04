@@ -105,7 +105,7 @@ static int ORANGEPI_PIN_MASK_5[5][32] =  //[BANK]	[INDEX]
 };
 
 ```
-## GPIOD
+## try using GPIOD
 ``` bash
 sudo apt install gpiod 
 python3
@@ -118,6 +118,44 @@ sudo apt install python3-pip
 python3 -m pip install -U --user pip gpiod
 g++ -o blink blink.cpp -lgpiodcxx
 ```
+
+## try using PIGPIO
+```
+wget https://github.com/joan2937/pigpio/archive/master.zip
+unzip master.zip 
+cp pigpio-master/
+make
+ls
+cd pigpio-master/
+ls
+make
+sudo make install 
+```
+
+## try using lgGPIO - lgpio library
+### Obtaining permission for /dev/gpiochip[0~4]
+1. create group `gpio` & add group permission
+``` bash
+sudo groupadd gpio
+sudo usermod -a -G gpio $USER
+```
+2.  add rule for `/dev/gpiochip[0~4]` of group `gpio`
+``` bash
+cd /etc/udev/rules.d/
+sudo nano 60-gpiod.rules
+```
+* /etc/udev/rules.d/60-gpiod.rules
+```
+# udev rules for gpio port access through libgpiod
+SUBSYSTEM=="gpio", KERNEL=="gpiochip[0-4]", GROUP="gpiod", MODE="0660"
+```
+3. reload rules & check permission
+```
+udevadm control --reload-rules && udevadm trigger
+sudo udevadm control --reload-rules && udevadm trigger
+reboot 
+```
+
 https://askubuntu.com/questions/1352726/how-do-i-use-pi4s-gpio-pins-with-ubuntu-20-04  
 </br>
 https://waldorf.waveform.org.uk/2021/the-pins-they-are-a-changin.html  
