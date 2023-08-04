@@ -155,7 +155,7 @@ udevadm control --reload-rules && udevadm trigger
 sudo udevadm control --reload-rules && udevadm trigger
 # reboot
 ```
-
+## Reference
 https://askubuntu.com/questions/1352726/how-do-i-use-pi4s-gpio-pins-with-ubuntu-20-04  
 </br>
 https://waldorf.waveform.org.uk/2021/the-pins-they-are-a-changin.html  
