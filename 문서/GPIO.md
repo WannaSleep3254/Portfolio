@@ -143,7 +143,7 @@ sudo usermod -a -G gpio $USER
 ```Bash
 cd /etc/udev/rules.d/
 sudo nano 60-gpiod.rules
-```Bash
+```
 * /etc/udev/rules.d/60-gpiod.rules
 ```Bash
 # udev rules for gpio port access through libgpiod
