@@ -129,7 +129,7 @@ unzip master.zip
 ```
 2. Build
 ```Bash
-cp pigpio-master/
+cd pigpio-master/
 make
 sudo make install 
 ```
