@@ -105,7 +105,19 @@ static int ORANGEPI_PIN_MASK_5[5][32] =  //[BANK]	[INDEX]
 };
 
 ```
-
+## GPIOD
+``` bash
+sudo apt install gpiod 
+python3
+python3 gpioget.py 
+exit
+python3 -m pip install -U --user pip gpiod
+cd Gcc_ws/
+g++ -o blink blink.cpp -lgpiodcxx
+sudo apt install python3-pip
+python3 -m pip install -U --user pip gpiod
+g++ -o blink blink.cpp -lgpiodcxx
+```
 https://askubuntu.com/questions/1352726/how-do-i-use-pi4s-gpio-pins-with-ubuntu-20-04  
 </br>
 https://waldorf.waveform.org.uk/2021/the-pins-they-are-a-changin.html  
