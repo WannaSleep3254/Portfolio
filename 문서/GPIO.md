@@ -1,8 +1,10 @@
 # GPIO on ROS2
 ## 개발환경
-Board: OrangePI5  
-OS: Ubuntu22.04  
-Library: wiringOP
+항목 | 내용
+---
+Board | OrangePI5  
+OS | Ubuntu22.04  
+Library | wiringOP
 
 ## ISSUE
 ### permission denied
