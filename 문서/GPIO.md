@@ -153,7 +153,7 @@ SUBSYSTEM=="gpio", KERNEL=="gpiochip[0-4]", GROUP="gpiod", MODE="0660"
 ```Bash
 udevadm control --reload-rules && udevadm trigger
 sudo udevadm control --reload-rules && udevadm trigger
-reboot 
+# reboot
 ```
 
 https://askubuntu.com/questions/1352726/how-do-i-use-pi4s-gpio-pins-with-ubuntu-20-04  
