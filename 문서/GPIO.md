@@ -106,28 +106,28 @@ static int ORANGEPI_PIN_MASK_5[5][32] =  //[BANK]	[INDEX]
 
 ```
 ## try using GPIOD
+1. C++
 ```Bash
-sudo apt install gpiod 
-python3
-python3 gpioget.py 
-exit
-python3 -m pip install -U --user pip gpiod
+sudo apt install gpiod
 cd Gcc_ws/
 g++ -o blink blink.cpp -lgpiodcxx
-sudo apt install python3-pip
+```
+2. Python
+```Bash
+sudo apt install  python3-pip
 python3 -m pip install -U --user pip gpiod
-g++ -o blink blink.cpp -lgpiodcxx
+python3 gpioget.py 
 ```
 
 ## try using PIGPIO
+1. Downliad library
 ```Bash
 wget https://github.com/joan2937/pigpio/archive/master.zip
-unzip master.zip 
+unzip master.zip
+```
+2. Build
+```Bash
 cp pigpio-master/
-make
-ls
-cd pigpio-master/
-ls
 make
 sudo make install 
 ```
